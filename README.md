@@ -32,3 +32,6 @@ Klien kami merupakan salah satu mahasiswa Fakultas Kedokteran Gigi dari Universi
 | Dokter Gigi  | - Mengakses hasil screening yang sudah dilakukan oleh pasien|
 |              | - Mengakses sebaran pasien di berbagai wilayah              |
 | Pasien       | - Melakukan screening terhadap gejala yang dialami          |
+
+## Use Case Diagram
+
