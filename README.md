@@ -46,3 +46,7 @@ Klien kami merupakan salah satu mahasiswa Fakultas Kedokteran Gigi dari Universi
 ## Use Case Diagram
 [`^ Kembali Keatas ^`](#)<br>
 ![alt text](https://github.com/inQuacknito/mppl/blob/main/Images/Use%20Case.jpg)
+
+## Class Diagram
+[`^ Kembali Keatas ^`](#)<br>
+![alt text](https://github.com/inQuacknito/mppl/blob/main/Images/Class%20Diagram.jpg)
