@@ -40,9 +40,9 @@ Klien kami merupakan salah satu mahasiswa Fakultas Kedokteran Gigi dari Universi
 | Pasien       | - Melakukan screening terhadap gejala yang dialami          |
 
 ## Timeline Pengerjaan
-[`^ Kembali Keatas ^`](#)
+[`^ Kembali Keatas ^`](#)<br>
 ![alt text](https://github.com/inQuacknito/mppl/blob/main/Images/Timeline.jpg)
 
 ## Use Case Diagram
-[`^ Kembali Keatas ^`](#)
+[`^ Kembali Keatas ^`](#)<br>
 ![alt text](https://github.com/inQuacknito/mppl/blob/main/Images/Use%20Case.jpg)
