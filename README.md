@@ -16,7 +16,7 @@ terhadap pasien, kemudian hasil screening tersebut akan diproses untuk mendeteks
 potensi penyakit karies pada pasien.
 
 
-##Latar Belakang
+## Latar Belakang
 [`^ Kembali Keatas ^`](#)
 Klien kami merupakan salah satu mahasiswa Fakultas Kedokteran Gigi dari Universitas Padjajaran yang memiliki permasalahan dalam mendiagnosis penyakit karies sehingga membutuhkan suatu sistem untuk mendeteksi penyakit tersebut. Oleh karena itu klien menginginkan sebuah aplikasi dengan requirements:
 - Membutuhkan sebuah sistem yang dapat memudahkannya dalam mendeteksi penyakit karies pada gigi pasien
