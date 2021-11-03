@@ -13,12 +13,6 @@ terhadap pasien, kemudian hasil screening tersebut akan diproses untuk mendeteks
 potensi penyakit karies pada pasien.
 
 
-##Latar Belakang
-Klien kami merupakan salah satu mahasiswa Fakultas Kedokteran Gigi dari Universitas Padjajaran yang memiliki permasalahan dalam mendiagnosis penyakit karies sehingga membutuhkan suatu sistem untuk mendeteksi penyakit tersebut. Oleh karena itu klien menginginkan sebuah aplikasi dengan requirements:
-- Membutuhkan sebuah sistem yang dapat memudahkannya dalam mendeteksi penyakit karies pada gigi pasien
-- Membutuhkan sebuah sistem yang dapat melakukan screening medis sebelum melakukan tindakan
-- Membutuhkan sebuah sistem yang dapat memetakan wilayah untuk memudahkannya dalam menentukan prioritas tindakan yang akan dilakukan terhadap pasien
-
 ## Ruang Lingkup
 - Sistem utama yang akan dikembangkan adalah sistem identifikasi karies dan prioritas tindakan
 - Tindakan lanjutan dilimpahkan kembali kepada user untuk menindaklanjuti
