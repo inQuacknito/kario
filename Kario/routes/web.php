@@ -35,6 +35,8 @@ Route::get('/hasil-pemeriksaan', function () {
 
 Route::get('/signup', [RegisterController::class, 'index'])->name('Signup');
 
+Route::post('/signup', [RegisterController::class, 'store'])->name('Resgister');
+
 Route::get('/login', [LoginController::class, 'index'])->name('Login');
 
 Route::get('/Pasien', [PasienController::class, 'cariData'])->name('Pasien');

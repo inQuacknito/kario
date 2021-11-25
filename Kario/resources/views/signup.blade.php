@@ -16,61 +16,110 @@
   
                   <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
   
-                  <form class="mx-1 mx-md-4">
-  
+                  <form class="mx-1 mx-md-4" action="/signup" method="post">
+                    
+                    @csrf
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input type="text" id="form3Example1c" class="form-control" />
-                        <label class="form-label" for="form3Example1c">Your Name</label>
+                        <input type="text" id="nama" name="nama" class="form-control @error('nama') is-invalid @enderror" value="{{ old('nama') }}" required/>
+                        <label class="form-label" for="form3Example1c">Nama Lengkap</label>
+                        @error('nama')
+                        <div class="invalid-feedback">
+                          {{ $message }}
+                        </div>
+                        @enderror
                       </div>
                     </div>
   
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input type="email" id="form3Example3c" class="form-control" />
+                        <input type="email" id="email" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required/>
                         <label class="form-label" for="form3Example3c">Email</label>
+                        @error('email')
+                        <div class="invalid-feedback">
+                          {{ $message }}
+                        </div>
+                        @enderror
                       </div>
                     </div>
   
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input type="password" id="form3Example4c" class="form-control" />
+                        <input type="password" id="password" name="password" class="form-control @error('password') is-invalid @enderror" required/>
                         <label class="form-label" for="form3Example4c">Password</label>
+                        @error('password')
+                        <div class="invalid-feedback">
+                          {{ $message }}
+                        </div>
+                        @enderror
                       </div>
                     </div>
   
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input type="password" id="form3Example4cd" class="form-control" />
+                        <input type="password" id="repassword" name="repassword" class="form-control @error('repassword') is-invalid @enderror" required/>
                         <label class="form-label" for="form3Example4cd">Ulangi Password</label>
+                        @error('repassword')
+                        <div class="invalid-feedback">
+                          {{ $message }}
+                        </div>
+                        @enderror
                       </div>
                     </div>
 
                     <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
-                          <input type="date" id="form3Example4cd" class="form-control" />
+                          <input type="date" id="tgllahir" name="tgllahir" class="form-control @error('tgllahir') is-invalid @enderror" value="{{ old('tgllahir') }}" required/>
                           <label class="form-label" for="form3Example4cd">Tanggal Lahir</label>
+                          @error('tgllahir')
+                          <div class="invalid-feedback">
+                            {{ $message }}
+                          </div>
+                          @enderror
                         </div>
                       </div>
 
                       <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
-                          <input type="text" id="form3Example4cd" class="form-control" />
+                          <input type="text" id="alamat" name="alamat" class="form-control @error('alamat') is-invalid @enderror" value="{{ old('alamat') }}" required/>
                           <label class="form-label" for="form3Example4cd">Alamat</label>
+                          @error('alamat')
+                          <div class="invalid-feedback">
+                            {{ $message }}
+                          </div>
+                          @enderror
                         </div>
                       </div>
 
                       <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
-                          <input type="text" id="form3Example4cd" class="form-control" />
+                          <input type="text" id="alamat" name="no_telpon" class="form-control @error('no_telpon') is-invalid @enderror" value="{{ old('no_telpon') }}" required/>
+                          <label class="form-label" for="form3Example4cd">Nomor Telefon</label>
+                          @error('no_telpon')
+                          <div class="invalid-feedback">
+                            {{ $message }}
+                          </div>
+                          @enderror
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0">
+                          <input type="text" id="jabatan" name="jabatan" class="form-control @error('jabatan') is-invalid @enderror" value="{{ old('jabatan') }}" required/>
                           <label class="form-label" for="form3Example4cd">Jabatan</label>
+                          @error('jabatan')
+                          <div class="invalid-feedback">
+                            {{ $message }}
+                          </div>
+                          @enderror
                         </div>
                       </div>
   
@@ -80,14 +129,15 @@
                         type="checkbox"
                         value=""
                         id="form2Example3c"
-                      />
+                        required
+                        />
                       <label class="form-check-label" for="form2Example3">
-                        I agree all statements in <a href="#!">Terms of service</a>
+                        Saya sudah membaca dan menyetujui <a href="#!">persyaratan yang berlaku!</a>
                       </label>
                     </div>
   
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <button type="button" class="btn btn-primary btn-lg">Register</button>
+                      <button type="submit" class="btn btn-primary btn-lg">Register</button>
                     </div>
   
                   </form>
