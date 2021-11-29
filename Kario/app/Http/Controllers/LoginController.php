@@ -19,7 +19,16 @@ class LoginController extends Controller
 
         if (Auth::attempt($credentials)){
             $request->session()->regenerate();
-            return redirect()->intended('/index');
+
+            if(auth()->user()->verivied == 1)
+                return redirect()->intended('/index');
+            else{
+                Auth::logout();
+                $request->session()->invalidate();
+                $request->session()->regenerateToken();
+                return back()->with('loginError','Akun anda belum terverifikasi');
+            }
+                
         }
 
         return back()->with('loginError','Email atau password salah');

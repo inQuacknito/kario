@@ -17,7 +17,7 @@
         @if( auth()->user()->jabatan == "Administrator")
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/adminindex">Cario</a>
+                <a class="navbar-brand" href="/index">Cario</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -36,7 +36,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="/daftarpasien">Daftar Pasien</a></li>
                                 <li><a class="dropdown-item" href="/diagnose">Diagnosa Pasien</a></li>
-                                <li><a class="dropdown-item" href="/verivikasi">Verivikasi Dokter</a></li>
+                                <li><a class="dropdown-item" href="/verifikasi">Verivikasi Dokter</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li>
                                     <form action="/logout" method="post">

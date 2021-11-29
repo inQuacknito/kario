@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\pasien;
+use App\Models\User;
 use App\Http\Requests\StorepasienRequest;
 use App\Http\Requests\UpdatepasienRequest;
 use GuzzleHttp\Psr7\Request;
@@ -90,9 +91,10 @@ class PasienController extends Controller
         $name = $_GET['name'];
         $birthdate = $_GET['birthdate'];
         $phone = $_GET['phone'];
-        $data = pasien::where('namaPasien','LIKE', $name)->
-        Where('tglLahir','LIKE',$birthdate)->
-        Where('No_Telpon','LIKE',$phone)->get();
+        $data = pasien::join('users', 'pasiens.ID_Dokter', '=', 'users.ID')->
+        where('pasiens.namaPasien','LIKE', $name)->
+        Where('pasiens.tglLahir','LIKE',$birthdate)->
+        Where('pasiens.No_Telpon','LIKE',$phone)->get();
 
         return view('data-pasien', compact('data'));
     }

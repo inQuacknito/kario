@@ -34,6 +34,8 @@ Route::get('/hasil-pemeriksaan', function () {
     return view('hasil-pemeriksaan');
 });
 
+Route::get('/verifikasi', [AuthController::class, 'listVerif']);
+
 Route::get('/signup', [RegisterController::class, 'index'])->name('Signup')->middleware('guest');
 
 Route::post('/signup', [RegisterController::class, 'store'])->name('Resgister');

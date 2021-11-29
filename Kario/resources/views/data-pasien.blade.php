@@ -11,23 +11,23 @@
           <!-- Breadcrumb -->
           
           <!-- /Breadcrumb -->
-    
+          
+          @foreach($data as $pasien)
           <div class="row gutters-sm">
             <div class="col-md-4 mb-3">
               <div class="card">
                 <div class="card-body">
                   <div class="d-flex flex-column align-items-center text-center">
                     <div class="mt-3">
-                      <h4>Dokter: Muhammad Rayhan Adyatma</h4>
-                      <p class="text-secondary mb-1">Administrator</p>
-                      <p class="text-muted font-size-sm">raytonius@gmail.com</p>
-                      <p class="text-muted font-size-sm">085810428309</p>
+                      <h4>Dokter: {{ $pasien->name }}</h4>
+                      <p class="text-secondary mb-1">{{ $pasien->jabatan }}</p>
+                      <p class="text-muted font-size-sm">{{ $pasien->email }}</p>
+                      <p class="text-muted font-size-sm">{{ $pasien->No_Telpon }}</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            @foreach($data as $pasien)
             <div class="col-md-8">
               <div class="card mb-3">
                 <div class="card-body">
@@ -88,8 +88,8 @@
               </div>
 
             </div>
-            @endforeach
           </div>
+          @endforeach
         </div>
        
     </div>
