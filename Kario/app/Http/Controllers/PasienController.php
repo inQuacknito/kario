@@ -94,7 +94,9 @@ class PasienController extends Controller
         $data = pasien::join('users', 'pasiens.ID_Dokter', '=', 'users.ID')->
         where('pasiens.namaPasien','LIKE', $name)->
         Where('pasiens.tglLahir','LIKE',$birthdate)->
-        Where('pasiens.No_Telpon','LIKE',$phone)->get();
+        Where('pasiens.No_Telpon','LIKE',$phone)->
+        select('pasiens.*', 'users.name', 'users.tglLahir as notUsed', 
+        'users.email', 'users.jabatan', 'users.email', 'users.alamat')->get();
 
         return view('data-pasien', compact('data'));
     }
