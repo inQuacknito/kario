@@ -56,4 +56,6 @@ Route::get('/daftarpasien', [PasienController::class, 'getData'])->name('data-pa
 
 Route::get('/ambil', [PasienController::class, 'ambilID'])->name('ambil')->middleware('auth');
 
+Route::get('/kariogram', [AuthController::class, 'kariogram']);
+
 Route::redirect('/', '/home');

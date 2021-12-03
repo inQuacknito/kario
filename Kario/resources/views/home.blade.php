@@ -5,21 +5,24 @@
 @endsection
 
 @section('isiUmum')
-<section class="vh-100" style="background-color: #eee;">
-    <div class="container h-75">
-        <div class="row d-flex justify-content-center align-items-center h-75">
-            <div class="col-lg-12 col-xl-11">
-                <div class="card text-black" style="border-radius: 25px;">
-                    <div class="card-body p-md-5">
-                        <div class="row justify-content-center">
-                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                                <p class="text-center h1 fw-bold mb-4 mx-1 mx-md-5 mt-4">Welcome to Cario!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<header id="header" class="header">
+        <img class="decoration-star" src="{{asset('images/decoration-star.svg')}}" alt="alternative">
+        <img class="decoration-star-2" src="{{asset('images/decoration-star.svg')}}" alt="alternative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-xl-5">
+                    <div class="text-container">
+                        <h1 class="h1-large">Welcome to Cario</h1>
+                        <p class="p-large">Lakukan diagnosis potensi penyakit karies dengan kariogram</p>
+                        <a class="btn-solid-lg" href="/kariogram">Lakukan Diagnosis</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-5 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{{asset('images/dental-check.png')}}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+</header> <!-- end of header -->
 @endsection

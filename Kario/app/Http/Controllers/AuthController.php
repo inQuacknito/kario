@@ -14,6 +14,10 @@ class AuthController extends Controller
             return view('Dokter.index');
     }
 
+    public function kariogram(){
+        return view('kariogram');
+    }
+    
     public function listVerif(){
         $pengguna = User::where('verivied','LIKE', 0)->get();
 
