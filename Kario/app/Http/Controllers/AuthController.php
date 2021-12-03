@@ -12,10 +12,18 @@ class AuthController extends Controller
             return view('Admin.index');
         else
             return view('Dokter.index');
-
     }
 
     public function listVerif(){
+        $pengguna = User::where('verivied','LIKE', 0)->get();
+
+        return view('Admin.verifikasi', compact('pengguna'));
+    }
+
+    public function verivicate(Request $request){
+        $data = User::find($request->id);
+        $data->verivied = $request->verivied;
+        $data->save();
         $pengguna = User::where('verivied','LIKE', 0)->get();
 
         return view('Admin.verifikasi', compact('pengguna'));

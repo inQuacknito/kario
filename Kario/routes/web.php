@@ -36,6 +36,8 @@ Route::get('/hasil-pemeriksaan', function () {
 
 Route::get('/verifikasi', [AuthController::class, 'listVerif']);
 
+Route::get('/verivicate', [AuthController::class, 'verivicate']);
+
 Route::get('/signup', [RegisterController::class, 'index'])->name('Signup')->middleware('guest');
 
 Route::post('/signup', [RegisterController::class, 'store'])->name('Resgister');
@@ -49,5 +51,7 @@ Route::post('/logout', [LoginController::class, 'logout'])->name('Logout');
 Route::get('/Pasien', [PasienController::class, 'cariData'])->name('Pasien');
 
 Route::get('/index', [AuthController::class, 'index'])->name('Index')->middleware('auth');
+
+Route::get('/daftarpasien', [PasienController::class, 'getData'])->name('data-pasien')->middleware('auth');
 
 Route::redirect('/', '/home');

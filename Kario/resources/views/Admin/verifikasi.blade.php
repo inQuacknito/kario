@@ -66,9 +66,14 @@
                                                 </div>
                                             </td>
                                             <td>
+                                                <form action="/verivicate">
+                                                @csrf
                                                 <div class="primary-btn">
-                                                    <a class="btn btn-primary" href="#">Verivicate</a>
+                                                    <input type="hidden" id="verivied" name="verivied" value=1>
+                                                    <input type="hidden" id="id" name="id" value={{ $verifikasi->id }}>   
+                                                    <button type="submit" class="btn btn-primary">Verivicate</button>
                                                 </div>
+                                                </form>
                                             </td>
                                         </tr>
                                     </tbody>

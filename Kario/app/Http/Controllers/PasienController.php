@@ -6,6 +6,7 @@ use App\Models\pasien;
 use App\Models\User;
 use App\Http\Requests\StorepasienRequest;
 use App\Http\Requests\UpdatepasienRequest;
+use Facade\FlareClient\View;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Routing\Controller;
 
@@ -99,5 +100,24 @@ class PasienController extends Controller
         'users.email', 'users.jabatan', 'users.email', 'users.alamat')->get();
 
         return view('data-pasien', compact('data'));
+    }
+
+    public function getData (){
+    
+        $data = pasien::join('users', 'pasiens.ID_Dokter', '=', 'users.ID')->
+        select('pasiens.*', 'users.name')->get();
+
+        return view('Dokter.daftar-pasien', compact('data'));
+    //    $name = $_GET['name'];
+    //    $birthdate = $_GET['birthdate'];
+    //    $phone = $_GET['phone'];
+    //    $data = pasien::join('users', 'pasiens.ID_Dokter', '=', 'users.ID')->
+    //    where('pasiens.namaPasien','LIKE', $name)->
+    //    Where('pasiens.tglLahir','LIKE',$birthdate)->
+    //    Where('pasiens.No_Telpon','LIKE',$phone)->
+    //    select('pasiens.*', 'users.name', 'users.tglLahir as notUsed', 
+    //    'users.email', 'users.jabatan', 'users.email', 'users.alamat')->get();
+
+    //    return view('data-pasien', compact('data'));
     }
 }
