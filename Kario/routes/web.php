@@ -54,4 +54,6 @@ Route::get('/index', [AuthController::class, 'index'])->name('Index')->middlewar
 
 Route::get('/daftarpasien', [PasienController::class, 'getData'])->name('data-pasien')->middleware('auth');
 
+Route::get('/ambil', [PasienController::class, 'ambilID'])->name('ambil')->middleware('auth');
+
 Route::redirect('/', '/home');

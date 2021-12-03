@@ -77,10 +77,9 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <form action="/verivicate">
+                                                <form action="/ambil">
                                                 @csrf
                                                 <div class="primary-btn">
-                                                    <input type="hidden" id="verivied" name="verivied" value=1>
                                                     <input type="hidden" id="id" name="id" value={{ $pasien->id }}>   
                                                     <button type="submit" class="btn btn-primary">View</button>
                                                 </div>
