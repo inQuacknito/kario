@@ -5,5 +5,5 @@
 @endsection
 
 @section('isiUmum')
-    <h1> Welcome!</h1>
+    <h1> HALO JEKARDAH</h1>
 @endsection
