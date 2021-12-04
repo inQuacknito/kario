@@ -5,7 +5,7 @@
 @endsection
 
 @section('isiUmum')
-    <h1>Halo</h1><html>
+<html>
     <head>
 <style>
 table {
@@ -89,6 +89,7 @@ tr:nth-child(even) {
                             <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5"></td>
                         </tr>
                         </table>
+                        <button type="button" class="btn btn-primary">Submit</button>
                  </div>
             </div>
         </div>
