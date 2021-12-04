@@ -48,6 +48,11 @@
                     <span>Data Pasien</span></a>
             </li>
             <li class="nav-item active">
+                <a class="nav-link" href="data-pasien.html">
+                    <i class="fas fa-fw fa-list-ul"></i>
+                    <span>Verifikasi</span></a>
+            </li>
+            <li class="nav-item active">
                 <a class="nav-link" href="/logout">
                         <form action="/logout" method="post">
                             @csrf
