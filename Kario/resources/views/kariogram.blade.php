@@ -26,14 +26,11 @@ tr:nth-child(even) {
 </style>
 </head>
 <body>
-<div class="container-fluid">
-            <!-- Page Heading -->
-            <h1 class="mt-3 mb-1 h3 mb-2 text-gray-800">Kariogram</h1>
 <div class="container p-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Form</div>
+                <div class="card-header">Kariogram</div>
                  <div class="card-body">
                         <table>
                         <tr>
