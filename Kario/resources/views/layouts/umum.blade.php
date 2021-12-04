@@ -20,51 +20,53 @@
   <body>  
     @auth
         @if( auth()->user()->jabatan == "Administrator")
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon">
-                    <i class="fas fa-tooth"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">Kario</div>
-            </a>
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+        <body id="page-top border">
+            <div id="wrapper">
+                <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+                    <!-- Sidebar - Brand -->
+                    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                        <div class="sidebar-brand-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <div class="sidebar-brand-text mx-3">Kario</div>
+                    </a>
+                    <!-- Divider -->
+                    <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/kariogram">
-                    <i class="fas fa-fw fa-stethoscope"></i>
-                    <span>Kariogram</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/daftarpasien">
-                    <i class="fas fa-fw fa-list-ul"></i>
-                    <span>Data Pasien</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/verifikasi">
-                    <i class="fas fa-fw fa-list-ul"></i>
-                    <span>Verifikasi</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/logout">
-                        <form action="/logout" method="post">
-                            @csrf
-                            <button type="submit">Keluar</button>
-                        </form>
-            </li>
-        </ul>
+                    <!-- Nav Item - Dashboard -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                            <span>Dashboard</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/kariogram">
+                            <i class="fas fa-fw fa-stethoscope"></i>
+                            <span>Kariogram</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/daftarpasien">
+                            <i class="fas fa-fw fa-list-ul"></i>
+                            <span>Data Pasien</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/verifikasi">
+                            <i class="fas fa-fw fa-list-ul"></i>
+                            <span>Verifikasi</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/logout">
+                                <form action="/logout" method="post">
+                                    @csrf
+                                    <button type="submit">Keluar</button>
+                                </form>
+                        </a>
+                    </li>
+                </ul>
         
         @else
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                     <a class="navbar-brand" href="/index">Cario</a>
@@ -134,8 +136,7 @@
         </div>
     </nav>    
     @endauth
-    
-
+              
     @yield('isiUmum')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Bootstrap core JavaScript-->

@@ -25,10 +25,9 @@ tr:nth-child(even) {
 }
 </style>
 </head>
-<body>
-<div class="container p-5">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+<div id="content-wrapper" class="flex">
+    <div id="content">
+        <div class="container-fluid bg-light"> 
             <div class="card">
                 <div class="card-header">Kariogram</div>
                  <div class="card-body">
