@@ -38,17 +38,17 @@
                     <span>Dashboard</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="/kariogram">
                     <i class="fas fa-fw fa-stethoscope"></i>
                     <span>Kariogram</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="data-pasien.html">
+                <a class="nav-link" href="/daftarpasien">
                     <i class="fas fa-fw fa-list-ul"></i>
                     <span>Data Pasien</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="data-pasien.html">
+                <a class="nav-link" href="/verifikasi">
                     <i class="fas fa-fw fa-list-ul"></i>
                     <span>Verifikasi</span></a>
             </li>
