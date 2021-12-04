@@ -19,7 +19,7 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-5 col-xl-7">
                     <div class="image-container">
-                        <img class="img-fluid" src="{{asset('images/dental-check.png')}}" alt="alternative">
+                        <img style="width: 500px;  right: 0px;" class="img-fluid" src="{{asset('images/dental-check.png')}}" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
