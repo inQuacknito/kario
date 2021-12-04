@@ -50,3 +50,23 @@ Klien kami merupakan salah satu mahasiswa Fakultas Kedokteran Gigi dari Universi
 ## Class Diagram
 [`^ Kembali Keatas ^`](#)<br>
 ![alt text](https://github.com/inQuacknito/mppl/blob/main/Images/Class%20Diagram.jpg)
+
+# Tampilan Antarmuka
+[`^ Kembali Keatas ^`](#)<br>
+
+## Homepage
+[`^ Kembali Keatas ^`](#)<br>
+![alt text](https://github.com/inQuacknito/mppl/blob/main/Images/Cario-homepage.jpg)
+
+## Login Screen
+[`^ Kembali Keatas ^`](#)<br>
+![alt text](https://github.com/inQuacknito/mppl/blob/main/Images/Cario-login.jpg)
+
+## Signup Screen
+[`^ Kembali Keatas ^`](#)<br>
+![alt text](https://github.com/inQuacknito/mppl/blob/main/Images/Cario-signup.jpg)
+
+## Cariogram
+[`^ Kembali Keatas ^`](#)<br>
+![alt text](https://github.com/inQuacknito/mppl/blob/main/Images/Cariogram.jpg)
+
