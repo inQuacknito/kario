@@ -36,52 +36,52 @@ tr:nth-child(even) {
         <tr>
             <td>1</td>
             <td>Caries Experience</td>
-            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5"></td>
+            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5" value="5"></td>
         </tr>
         <tr>
             <td>2</td>
             <td>Related Disease</td>
-            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5"></td>
+            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5" value="5"></td>
         </tr>
         <tr>
             <td>3</td>
             <td>Diet Contents</td>
-            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5"></td>
+            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5" value="5"></td>
         </tr>
         <tr>
             <td>4</td>
             <td>Diet Frequency</td>
-            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5"></td>
+            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5" value="5"></td>
         </tr>
         <tr>
             <td>5</td>
             <td>Plaque Amount</td>
-            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5"></td>
+            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5" value="5"></td>
         </tr>
         <tr>
             <td>6</td>
             <td>Mutans Streptococci</td>
-            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5"></td>
+            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5" value="5"></td>
         </tr>
         <tr>
             <td>7</td>
             <td>Fluoride Program</td>
-            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5"></td>
+            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5" value="5"></td>
         </tr>
         <tr>
             <td>8</td>
             <td>Saliva Secretion</td>
-            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5"></td>
+            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5" value="5"></td>
         </tr>
         <tr>
             <td>9</td>
             <td>Saliva Secretion</td>
-            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5"></td>
+            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5" value="5"></td>
         </tr>
         <tr>
             <td>10</td>
             <td>Clinical Judgement/td>
-            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5"></td>
+            <td><label for="points">Points (between 1 to 5):</label><input type="range" id="points" name="points" min="1" max="5" value="5"></td>
         </tr>
         </table>
 
